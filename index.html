@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ramana Kumar URL's</title>
+<title>Ramana Kumar URLs</title>
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -22,6 +22,8 @@
     padding:1rem;
     background:#1e1e1e;
     position:sticky;top:0;z-index:10;
+    width: 100%;
+    box-sizing: border-box;
   }
   header h1{margin:0;font-weight:600;}
   .top-bar{
@@ -51,13 +53,14 @@
   th{font-weight:600;background:#1e1e1e;}
   /* URL cell: truncate long text */
   td.url-cell{
-    max-width:180px;
+    max-width:150px; /* Changed from 170px to 150px */
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
+    padding: .625rem;
   }
   td.url-cell a{
-    color:#1e90ff;              /* bright blue link */
+    color:#1e90ff;
     text-decoration:none;
     font-weight:600;
     display:inline-block;
@@ -111,8 +114,8 @@
   @media (max-width:600px){
     th,td{font-size:.9rem;}
     .actions{
-      justify-content:center;  /* center icons horizontally */
-      flex-wrap:nowrap;        /* keep them in a single row */
+      justify-content:center;
+      flex-wrap:nowrap;
     }
     .actions button{
       padding:.5rem;
@@ -123,7 +126,7 @@
 <body>
 
 <header>
-  <h1>Ramana Kumar URL's</h1>
+  <h1>Ramana Kumar URLs</h1>
   <div class="top-bar">
     <input type="text" id="search" placeholder="Search website">
     <button id="addBtn">+ Add Website</button>
